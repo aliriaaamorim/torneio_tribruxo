@@ -1,0 +1,72 @@
+/*============ Configuração da página =============*/
+/*=================================================*/
+
+* {
+    padding: 0;
+    margin: 10;
+    box-sizing: border-box;
+
+}
+
+/*body {
+    height: 0vh;
+    display: flex;
+    /*background para interface
+}*/
+
+#placar {
+    width:auto;
+    height:auto;
+    margin:25;
+    display: contents;
+}
+
+/*======= Organização das cartas na página ========*/
+/*=================================================*/
+
+#matriz_jogo{
+    width: 640px;
+    height: 640px;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*============ Configuração da carta ==============*/
+/*=================================================*/
+
+.carta {
+    width: calc(25% - 10px);
+    height: 33%;
+    margin: 3px;
+    transform-style: preserve-3d;  /*efeito de giro na carta*/
+    position: relative;
+
+}
+
+/*----- Movimento da carta ao clicar -------*/
+
+.carta:active{
+    transform: scale(0.97); 
+}
+
+/*----- classe para abrir carta ao clicar ------*/
+
+.carta.abrir {
+    transform: rotateY(180deg);
+}
+
+
+.frente,
+.verso{
+    width: 100%;
+    height: 100%;
+    padding: 08px;
+    background-color: rgb(26, 85, 124);
+    position: absolute;
+}
+
+.frente{
+    transform: rotateY(180deg);
+}
+

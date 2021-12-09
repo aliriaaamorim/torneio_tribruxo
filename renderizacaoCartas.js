@@ -28,13 +28,13 @@ imagens.forEach(img => {
 
 matriz.innerHTML = cartaHTLM + cartaHTLM;
 
-const cartas = document.querySelectorAll('.matriz');
-
+const cartas = document.querySelectorAll(".carta");
 
 function virarCarta() {
-    this.classList.add('abrir');
+    this.classList.add("abrir");
 }
-cartas.forEach(cart => cart.addEventListener("click", virarCarta));
+cartas.forEach(cart => cart.addEventListener('click', virarCarta));
+
 
 
 /*=========== Pontuação dos jogadores =============*/
@@ -45,6 +45,8 @@ let pontosJogador1 = document.getElementById("nomeJogador1");
 
 let nomeJogador2 = "Player-2";  // usar o nome definido no menu do jogo
 let pontosJogador2 = 0;
+
+
 
 
 

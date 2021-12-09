@@ -28,10 +28,10 @@ imagens.forEach(img => {
 
 matriz.innerHTML = cartaHTLM + cartaHTLM;
 
-const cartas = document.querySelectorAll(".carta");
+const cartas = document.querySelectorAll('.carta');
 
 function virarCarta() {
-    this.classList.add("abrir");
+    this.classList.add('abrir');
 }
 cartas.forEach(cart => cart.addEventListener('click', virarCarta));
 

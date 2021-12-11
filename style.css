@@ -9,8 +9,8 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
+    height: 70vh;
+    display: contents;
 
 }
 
@@ -26,8 +26,8 @@ body {
 
 
 #matriz_jogo{  
-    width: 640px;
-    height: 640px;
+    width: 800px;
+    height: 600px;
     margin:auto;
     perspective: 1000px;
     display:flex;
@@ -38,8 +38,8 @@ body {
 /*=================================================*/
 
 .carta {
-    width: calc(25% - 10px);
-    height: 33%;
+    width: calc(20% - 8px);
+    height: 37%;
     margin: 3px;
     position: relative;
     transform-style: preserve-3d; /*efeito de giro na carta*/
@@ -67,7 +67,7 @@ body {
     height: 100%;
     padding: 08px;
     position: absolute;
-    background-color:rgb(26, 93, 131);
+    background-color:rgb(47, 49, 49);
     backface-visibility: hidden; 
     transform: rotateY(180deg);
     
@@ -76,8 +76,8 @@ body {
 .verso{
     width: 100%;
     height: 100%;
-    padding: 08px;
+    padding: 09px;
     position: absolute;
-    background-color:rgb(26, 93, 131);
+    background-color:rgb(20, 44, 44);
     backface-visibility: hidden;  
 }

@@ -2,7 +2,7 @@
 
 const placar = document.querySelector("#placar");
 const matriz = document.querySelector("#matriz_jogo");
-const imagens = [
+let imagens = [
     'card_01.png',
     'card_02.png',
     'card_03.png',
@@ -14,9 +14,38 @@ const imagens = [
     'card_09.jpg',
     'card_10.png',
     'card_11.png',
-    'card_12.png'
-
+    'card_12.png',
+    'card_01.2.png',
+    'card_02.2.png',
+    'card_03.2.png',
+    'card_04.2.jpg',
+    'card_05.2.png',
+    'card_06.2.png',
+    'card_07.2.jpg',
+    'card_08.2.jpg',
+    'card_09.2.jpg',
+    'card_10.2.png',
+    'card_11.2.png',
+    'card_12.2.png'
 ]
+
+/* randomizar elementos do imagens 'imagens' */
+
+function embaralharCartas(lista) {
+
+    for (let itemLista = 0; itemLista < (lista.length) -1 ; itemLista++) {
+        let aleatorio = Math.floor(Math.random()*itemLista);
+        let listaTemp = lista[itemLista];
+        lista[itemLista] = lista[aleatorio];
+        lista[aleatorio] = listaTemp;
+    }
+
+    return lista;
+    
+}
+
+imagens = embaralharCartas(imagens);
+
 
 let divCarta = '';
 
@@ -30,7 +59,7 @@ imagens.forEach(img => {
     `
 });
 
-matriz.innerHTML = divCarta + divCarta;
+matriz.innerHTML = divCarta;
 
 const cartas = document.querySelectorAll('.carta');
 
@@ -44,12 +73,12 @@ cartas.forEach(item => item.addEventListener('click', virarCarta));
 /*=========== Pontuação dos jogadores =============*/
 /*=================================================*/
 
-let arrayCartas = [];
+let imagensCartas = [];
 
-//array.push() -> insere no final
-//array.pop() -> remove do final
-//array.shift() -> remove do inicio
-//array.unshift() - insere no inicio
+//imagens.push() -> insere no final
+//imagens.pop() -> remove do final
+//imagens.shift() -> remove do inicio
+//imagens.unshift() - insere no inicio
 /*
 -----------
 *1ª carta aberta*

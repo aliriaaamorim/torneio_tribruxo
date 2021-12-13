@@ -62,8 +62,8 @@ const cartas = document.querySelectorAll('.carta');
 
 const nomeJogador1 = "Jogador1";
 const nomeJogador2 = "Jogador2";
-let pontosJogador1 = 2;
-let pontosJogador2 = 4;
+let pontosJogador1 = 0;
+let pontosJogador2 = 0;
 let vezJogador1 = true;
 
 
@@ -119,9 +119,45 @@ function virarCarta() {
     comparar();
     
     //exibe mensagem de fim de jogo, caso todas as cartas tenham sido abertas
-    mudarCena(); ///// IT WORRRRRRRRRKS
+    mudarCena(); 
 
 }
+
+function atribuirPontos(){
+    if(vezJogador1){
+        if(carta1.dataset.id === 'card_13.png'){
+            pontosJogador1 += 3;
+            pontosJ1_html.innerText = pontosJogador1;
+        } else if(carta1.dataset.id === 'card_14.png' || carta1.dataset.id == 'card_15.png'){
+            pontosJogador1 += 5;
+            pontosJ1_html.innerText = pontosJogador1;
+
+        } else{
+            pontosJogador1 ++;
+            pontosJ1_html.innerText = pontosJogador1;
+
+        } 
+     } else{
+        if(carta1.dataset.id === 'card_13.png'){
+            pontosJogador2 += 3;
+            pontosJ2_html.innerText = pontosJogador2;
+        } else if(carta1.dataset.id === 'card_14.png' || carta1.dataset.id == 'card_15.png'){
+            pontosJogador2 += 5;
+            pontosJ2_html.innerText = pontosJogador2;
+
+        } else{
+            pontosJogador2 ++;
+            pontosJ2_html.innerText = pontosJogador2;
+        }
+       
+    }
+
+}
+
+function pulaVez() {
+    vezJogador1 = !vezJogador1;
+}
+
 
 
 //////////////////////////////////////////////////////
@@ -138,6 +174,7 @@ function comparar(){
         limparVariavel(cartasIguais); // chama a funcao 'limparvariavel' com o parametro 'cartasIguais' = true
 
     } else{
+        pulaVez();
         desabilitarCartas();
     }
 
@@ -184,41 +221,8 @@ function mudarCena(){
       } 
   }
 
-function atribuirPontos(){
-    if(vezJogador1){
-        if(carta1.dataset.id === 'card_13.png' && cartasIguais){
-            pontosJogador1 += 3;
-            pontosJ1_html.innerText = pontosJogador1;
-        } else if((carta1.dataset.id === 'card_14.png' || carta1.dataset.id == 'card_15.png') && cartasIguais){
-            pontosJogador1 += 5;
-            pontosJ1_html.innerText = pontosJogador1;
-
-        } else{
-            pontosJogador1 ++;
-            pontosJ1_html.innerText = pontosJogador1;
-
-        } 
-     } else{
-        if(carta1.dataset.id === 'card_13.png' && cartasIguais){
-            pontosJogador2 += 3;
-            pontosJ1_html.innerText = pontosJogador2;
-        } else if((carta1.dataset.id === 'card_14.png' || carta1.dataset.id == 'card_15.png') && cartasIguais){
-            pontosJogador2 += 5;
-            pontosJ1_html.innerText = pontosJogador2;
-
-        } else{
-            pontosJogador2 ++;
-            pontosJ1_html.innerText = pontosJogador2;
-        }
-       
-    }
-
-}
-
 cartas.forEach(item => item.addEventListener('click', virarCarta));
 
-function pulaVez(p1, p2) {
-}
 
 
   

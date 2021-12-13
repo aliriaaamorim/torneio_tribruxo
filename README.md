@@ -22,20 +22,17 @@ Trabalho foi desenvolvido com intuito de criar um jogo na linguagem javaScript q
 
 
 #### **1.2 Convenções, termos e abreviações**<br>
-A lista de siglas utilizadas nesse trabalho são:
+A lista de siglas utilizadas nesse trabalho são:<br>
 ED - Estrutura de Dados;
 
 
 ### **2. Visão Geral do Projeto**<br>
-O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto. No jogo será possível a participação de 4 jogadores.   <br>
+O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto. Na aplicação web será possível a participação de 4 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
+
 **Jogo da memória**<br>
 contendo 30 peças
 
 **Jogo do Labirinto**<br>
-
-
-
-### **3. Protótipo**<br>
 
 
 ### **4. Planejamento**<br>

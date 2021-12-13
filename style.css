@@ -9,7 +9,8 @@
 }
 
 body {
-    height: 70vh;
+    height: auto;
+    width:auto;
     display: contents;
 
 }

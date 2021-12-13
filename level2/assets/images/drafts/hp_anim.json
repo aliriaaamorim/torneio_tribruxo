@@ -1,0 +1,124 @@
+{
+    "anims": [
+        {
+            "key": "hp_back",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "hp",
+                    "frame": "back_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "back_02"
+                },
+                {
+                    "key": "hp",
+                    "frame": "back_03"
+                },
+                {
+                    "key": "hp",
+                    "frame": "back_04"
+                }
+            ]
+        },
+        {
+            "key": "hp_right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "hp",
+                    "frame": "right_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "right_02"
+                },
+                {
+                    "key": "hp",
+                    "frame": "right_03"
+                },
+                {
+                    "key": "hp",
+                    "frame": "right_04"
+                }
+            ]
+        },
+        {
+            "key": "hp_left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "hp",
+                    "frame": "left_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "left_02"
+                },
+                {
+                    "key": "hp",
+                    "frame": "left_03"
+                },
+                {
+                    "key": "hp",
+                    "frame": "left_04"
+                }
+            ]
+        },
+        {
+            "key": "hp_front",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "hp",
+                    "frame": "front_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_02"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_03"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_04"
+                }
+            ]
+        },
+        {
+            "key": "hp_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "hp",
+                    "frame": "front_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_01"
+                },
+                {
+                    "key": "hp",
+                    "frame": "front_01"
+                }
+            ]
+        }
+    ]
+}

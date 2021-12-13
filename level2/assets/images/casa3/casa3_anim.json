@@ -1,0 +1,100 @@
+{
+    "anims": [
+        {
+            "key": "casa3_right",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "casa3",
+                    "frame": "right_01"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "right_02"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "right_03"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "right_04"
+                }
+            ]
+        },
+        {
+            "key": "casa3_left",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "casa3",
+                    "frame": "left_01"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "left_02"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "left_03"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "left_04"
+                }
+            ]
+        },
+        {
+            "key": "casa3_front",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "casa3",
+                    "frame": "front_01"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "front_02"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "front_03"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "front_04"
+                }
+            ]
+        },
+        {
+            "key": "casa3_back",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "casa3",
+                    "frame": "back_01"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "back_02"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "back_03"
+                },
+                {
+                    "key": "casa3",
+                    "frame": "back_04"
+                }
+            ]
+        }
+    ]
+}

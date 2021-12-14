@@ -1,4 +1,5 @@
 # MANUAL PARA JOGAR
+Link para funcionamneto do jogo: https://www.youtube.com/watch?v=plqWoYLUt8E
 
 ## NO JOGO DA MEMÓRIA
 

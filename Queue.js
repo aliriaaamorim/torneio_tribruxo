@@ -63,3 +63,5 @@ class Queue {
         return [this.dequeue(), this];
     }
 }
+
+exports.Queue = Queue;

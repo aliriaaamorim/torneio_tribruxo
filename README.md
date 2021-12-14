@@ -29,23 +29,28 @@ ED - Estrutura de Dados;
 ### **2. Visão Geral do Projeto**<br>
 O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto e um jogo bônus que seria o jogo da cobrinha. Na aplicação web será possível a participação de 4 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
 
-**Tela de inicio**<br>
+**Tela de início e escolha dos personagens**<br>
+Na tela de Início foi implementado uma imagem de fundo da série em questão. Com um botão de player com animação após clicar no mesmo será aberto a tela para escolha dos personagens. 
 
 **Jogo da memória**<br>
 Este seria o primeiro level. Consistindo em um jogo de 30 peças ou cartas que tem por intuito achar os pares de peças iguais. 
 
 **Jogo do Labirinto**<br>
-Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jogadodores vencedores do level 1. O qual os players terão que procurar pelo objeto vencedor dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 
+Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jogadodores vencedores do level 1. O qual os players terão que procurar pelo objeto, dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 
 
-A criação do labirinto foi através do programa windowns gratuito chamado Tiled que auxilia na criação do mapa. Utilizou-se frames de personagens prontos retirado do site a seguir https://itch.io/game-assets/tag-sprites com algumas adaptações. E a movimentação do boneco foi feita através do site seguinte https://1drv.ms/u/s!Arkb2zGKHWJXiN1micaifszQJZbDTw?e=HXYmQd. Válido salientar o uso da biblioteca Phaser 
+A criação do labirinto foi através do programa windowns gratuito chamado Tiled que auxilia na criação do mapa. Utilizou-se frames de personagens prontos retirado do site a seguir https://itch.io/game-assets/tag-sprites com algumas adaptações. E a movimentação do boneco foi feita através do site seguinte https://gammafp.com/ que é uma ferramenta auxiliadora para criar animações e tudo mais. Válido salientar o uso da biblioteca Phaser na criação do jogo.
 
-https://gammafp.com/ para criar o código da movimentação do boneco
+No código possui um arquivo chamado "index.html" em que o mesmo faz a execução e o chamado dos métodos e funções dos arquivos '.js'. No arquivo torneio_tribruxo foi construído a partir de configurações básicas da biblioteca Phaser. O arquivo MainScene que faz o carregamento de todo o mapa da aplicação, dos personagens e todos os outros recursos usados no jogo. O resource que fará o papel de capturar os objetos coletáveis. Arquivo Player contendo a casa correspondente da escola de magia.
+
+Para jogar pode ser utilizado as teclas W, A, S e D para o primeiro player e para o segundo I, J, K e L. Na qual as teclas W e I fazem o movimento para cima, já S e K movimentam o boneco para baixo, juntamente com os botões A e J que fazem o deslocamento para esquerda e os dois últimos que são o D e o L para a direita. 
 
 **Jogo da cobrinha**<br>
 
 **Estrutura de dados**<br>
 
-### **4. Requisitos**<br>
+### **4. Requisitos necessários na aplicação**<br>
+Aplicação busca ser rápida, intuitiva e interativa. Funcionando no modelo web service na linguagem JavaScript, não precisando do armazenamento de dados pessoais. 
+Play , seleção dos bonecos
 
 ### **5. Planejamento**<br>
 A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio e menu, do jogo da Memória, jogo de Labirinto, jogo da cobrinha e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.  

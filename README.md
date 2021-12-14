@@ -27,13 +27,13 @@ ED - Estrutura de Dados;
 
 
 ### **2. Visão Geral do Projeto**<br>
-O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto e um jogo bônus que seria o jogo da cobrinha. Na aplicação web será possível a participação de 4 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
+O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto e um jogo bônus que seria o jogo da cobrinha. Na aplicação web será possível a participação de 2 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
 
 **Tela de início e escolha dos personagens**<br>
-Na tela de Início foi implementado uma imagem de fundo da série em questão. Com um botão de player com animação após clicar no mesmo será aberto a tela para escolha dos personagens. 
+Na tela de Início foi implementado uma imagem de fundo da série em questão. Com um botão de player com animação após clicar no mesmo será aberto a tela para escolha dos personagens deixando o primeiro e o segundo player posteriormente selecionar o seu boneco. O código no arquivo Scene1 e Scene2 foram feitos em JavaScript os quais mostram as imagens e fazem as animações destinadas ao personagem. 
 
 **Jogo da memória**<br>
-Este seria o primeiro level. Consistindo em um jogo de 30 peças ou cartas que tem por intuito achar os pares de peças iguais. 
+Este seria o primeiro level do torneio Tribruxo. Consistindo em um jogo de 30 cartas que tem por intuito achar os pares de cartas iguais. Caso seja encontrado as cartas iguais o player poderá fazer uma nova jogada, mas caso encontre cartas diferentes o mesmo perde a vez passando a mesma para o outro jogador. 
 
 **Jogo do Labirinto**<br>
 Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jogadodores vencedores do level 1. O qual os players terão que procurar pelo objeto, dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 

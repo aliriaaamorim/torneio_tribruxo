@@ -91,3 +91,5 @@ Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conse
 DEVMEDIA.Código referência para função embaralharCartas() no arquivo jogoDaMemoria.js Disponível em < https://www.devmedia.com.br/embaralhando-o-conteudo-de-vetores-em-java/26382 > Acessado em 8 de Dezembro.
 
 ALVARADO, Francisco Pereira. Disponível em < https://gammafp.com/ > Acessado em 1 de Novembro.
+
+Curso utilizado como base para desenvolvimento do jogo: https://www.udemy.com/course/create-a-survival-game-in-javascript-with-phaser-3-in-2020/

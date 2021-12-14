@@ -44,14 +44,14 @@ Fila
 stack
 
 **Jogo da memória**<br>
-Este seria o primeiro level do torneio Tribruxo. Consistindo em um jogo de 30 cartas que tem por intuito achar os pares de cartas iguais. Caso seja encontrado as cartas iguais o player poderá fazer uma nova jogada, mas caso encontre cartas diferentes o mesmo perde a vez passando a mesma para o outro jogador. 
+Este seria o primeiro jogo do torneio Tribruxo. Consistindo em um jogo de 30 cartas que tem por intuito achar os pares de cartas iguais. Caso seja encontrado as cartas iguais o player poderá fazer uma nova jogada, mas caso encontre cartas diferentes o mesmo perde a vez passando a mesma para o outro jogador. 
 
 **Jogo do Labirinto**<br>
-Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jogadodores vencedores do level 1. O qual os players terão que procurar pelo objeto, dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 
+Para o segundo jogo tem-se o jogo do Labirinto que consiste na disputa entre dois jogadores. No qual os players terão que procurar pelo objeto, dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 
 
 A criação do labirinto foi através do programa windowns gratuito chamado Tiled que auxilia na criação do mapa. Utilizou-se frames de personagens prontos retirado do site a seguir https://itch.io/game-assets/tag-sprites com algumas adaptações. E a movimentação do boneco foi feita através do site seguinte https://gammafp.com/ que é uma ferramenta auxiliadora para criar animações e tudo mais. Válido salientar o uso da biblioteca Phaser na criação do jogo.
 
-No código possui um arquivo chamado "index.html" em que o mesmo faz a execução e o chamado dos métodos e funções dos arquivos '.js'. No arquivo torneio_tribruxo foi construído a partir de configurações básicas da biblioteca Phaser. O arquivo MainScene que faz o carregamento de todo o mapa da aplicação, dos personagens e todos os outros recursos usados no jogo. O resource que fará o papel de capturar os objetos coletáveis. Arquivo Player contendo a casa correspondente da escola de magia.
+No código possui um arquivo chamado "index.html" em que o mesmo faz a execução e o chamado dos métodos e funções dos arquivos '.js'. No arquivo torneio_tribruxo foi construído a partir de configurações básicas da biblioteca Phaser. O arquivo MainScene que faz o carregamento de todo o mapa da aplicação, dos personagens e todos os outros recursos usados no jogo. O resource que fará o papel de capturar os objetos coletáveis. A pasta `players` contendo a casa correspondente da escola de magia. O código fonte do jogo se encontra na pasta level2.
 
 Para jogar pode ser utilizado as teclas W, A, S e D para o primeiro player e para o segundo I, J, K e L. Na qual as teclas W e I fazem o movimento para cima, já S e K movimentam o boneco para baixo, juntamente com os botões A e J que fazem o deslocamento para esquerda e os dois últimos que são o D e o L para a direita. 
 

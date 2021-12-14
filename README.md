@@ -14,23 +14,30 @@ WILLIAM KEVIM FONTES GARANGAU<br>
 
 
 ### **1. Introdução**<br>
-Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo e que foi convidado para estudar na Escola de Magia e Bruxaria de Hogwarts a qual possui diferentes casas que disputam o torneio tribruxo em um determinado ponto da série. Esta aplicação buscou trazer a diversificação da série para uma interatividade gamer.  
+Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo e que foi convidado para estudar na Escola de Magia e Bruxaria de Hogwarts a qual possui diferentes casas que disputam o torneio tribruxo em um determinado ponto da série. Esta aplicação buscou trazer a diversificação da série para uma interatividade gamer através do jogo da memória e do jodo de labirinto.   
 
 
 #### **1.1 Objetivo**<br>
-Trabalho foi desenvolvido com intuito de criar um jogo na linguagem javaScript que contenha estruturas de dados sendo utilizadas na sua composição. Buscando com a produção adaptabilidade, aprendizado e o trabalho em equipe. 
+Trabalho foi desenvolvido com intuito de criar um jogo na linguagem JavaScript que contenha estruturas de dados sendo utilizadas na sua composição. Buscando com a produção adaptabilidade, aprendizado e o trabalho em equipe. 
 
 
-#### **1.2 Convenções, termos e abreviações**<br>
-A lista de siglas utilizadas nesse trabalho são:<br>
-ED - Estrutura de Dados;
+### **2. Desenvolvimento**<br>
+
+#### **2.1 Visão Geral do Projeto**<br>
+O projeto foi feito através do github na linguagem JavaScript e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. A aplicação possui dois jogos atualmente o primeiro que é jogo da memória e o segundo o jogo de labirinto. Sendo um modelo web service no qual será possível a participação de 2 players. Contendo uma tela de início, após uma segunda tela para selecionar os jogos. Aplicação busca ser rápida, intuitiva e interativa, não precisando do armazenamento de dados pessoais nem de um banco de dados. 
 
 
-### **2. Visão Geral do Projeto**<br>
-O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto e um jogo bônus que seria o jogo da cobrinha. Na aplicação web será possível a participação de 2 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
+#### **2.2 Planejamento geral**<br>
+A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio, tela de selecionar jogo, do jogo da Memória, do jogo de Labirinto e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.<br>
+
 
 **Tela de início e escolha dos personagens**<br>
-A tela do menu é composta por uma foto com a temática do torneio aliado ao nome do mesmo. Além disso, há o botão de play na primeira cena, que permite a transição para a tela de seleção de personagem. Essa tela é composta por 4 bonecos, cada um representa uma casa do filme (Grifinória, Sonserina, Corvinal e Lufa Lufa), cada player irá escolher um personagem que serão usados no decorrer do jogo. Após a seleção, os jogadores são redirecionados para o jogo da memória, e posteriormente para a prova final no labirinto. 
+A tela do menu é composta por uma foto com a temática do torneio aliado ao nome do mesmo. Além disso, há o botão de play na primeira cena, que permite a transição para a tela de seleção de jogo. Essa tela é composta por 2 imagens animadas, cada um representando um jogo, onde cada player poderá escolher entre o jogo da memória e o jogo de labirinto. Após a seleção, os jogadores são redirecionados para a aplicação e podem interagir. Logo após a finalização retorna para tela com o play. 
+
+
+**Estrutura de dados**<br>
+queue 
+stack
 
 **Jogo da memória**<br>
 Este seria o primeiro level do torneio Tribruxo. Consistindo em um jogo de 30 cartas que tem por intuito achar os pares de cartas iguais. Caso seja encontrado as cartas iguais o player poderá fazer uma nova jogada, mas caso encontre cartas diferentes o mesmo perde a vez passando a mesma para o outro jogador. 
@@ -44,21 +51,13 @@ No código possui um arquivo chamado "index.html" em que o mesmo faz a execuçã
 
 Para jogar pode ser utilizado as teclas W, A, S e D para o primeiro player e para o segundo I, J, K e L. Na qual as teclas W e I fazem o movimento para cima, já S e K movimentam o boneco para baixo, juntamente com os botões A e J que fazem o deslocamento para esquerda e os dois últimos que são o D e o L para a direita. 
 
-**Jogo da cobrinha**<br>
-
-**Estrutura de dados**<br>
-
-### **4. Requisitos necessários na aplicação**<br>
-Aplicação busca ser rápida, intuitiva e interativa. Funcionando no modelo web service na linguagem JavaScript, não precisando do armazenamento de dados pessoais. 
-Play , seleção dos bonecos
-
-### **5. Planejamento**<br>
-A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio e menu, do jogo da Memória, jogo de Labirinto, jogo da cobrinha e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.  
-
-### **6. Conclusão**<br>
+### **3. Conclusão**<br>
 Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conseguiu-se elaborar jogos em Javascript. Com os mesmos utilizando de estruturas de dados como priority queue, stack, dentre outras que compuseram os códigos para que o torneio funcionasse como um todo, além de trazer a série para o mundo gamer de uma forma saudosa e interativa. 
 
 ### **Referências**<br>
+
+
+
 
 
 # MANUAL PARA JOGAR

@@ -62,11 +62,15 @@ Para jogar pode ser utilizado as teclas W, A, S e D para o primeiro player e par
 Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conseguiu-se elaborar jogos em Javascript. Com os mesmos utilizando de estruturas de dados como priority queue, stack, dentre outras que compuseram os códigos para que o torneio funcionasse como um todo, além de trazer a série para o mundo gamer de uma forma saudosa e interativa. 
 
 ### **Referências**<br>
+DEVMEDIA.Código referência para função embaralharCartas() no arquivo jogoDaMemoria.js Disponível em < https://www.devmedia.com.br/embaralhando-o-conteudo-de-vetores-em-java/26382 > Acessado em 23 de Novembro.
+
+ALVARADO, Francisco Pereira. Disponível em < https://gammafp.com/ > Acessado em 1 de Novembro.
 
 
-
-
-
+<br>
+<br>
+<br>
+<br>
 # MANUAL PARA JOGAR
 
 ## NO JOGO DA MEMÓRIA

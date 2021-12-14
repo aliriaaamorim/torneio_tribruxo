@@ -44,10 +44,10 @@ Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jo
 
 ### **4. Requisitos**<br>
 
-### **4. Planejamento**<br>
+### **5. Planejamento**<br>
 A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio e menu, do jogo da Memória, jogo de Labirinto, jogo da cobrinha e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.  
 
-### **1. Conclusão**<br>
+### **6. Conclusão**<br>
 Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conseguiu-se elaborar jogos em Javascript. Com os mesmos utilizando de estruturas de dados como priority queue, stack, dentre outras que compuseram os códigos para que o torneio funcionasse como um todo, além de trazer a série para o mundo gamer de uma forma saudosa e interativa. 
 
 ### **Referências**<br>

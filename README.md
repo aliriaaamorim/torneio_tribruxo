@@ -14,11 +14,11 @@ WILLIAM KEVIM FONTES GARANGAU<br>
 
 
 ### **1. Introdução**<br>
-Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo e que foi convidado para estudar na Escola de Magia e Bruxaria de Hogwarts a qual possui diferentes casas que disputam o torneio tribruxo em um determinado ponto da série. Esta aplicação buscou trazer a diversificação da série para uma interatividade gamer através do jogo da memória e do jodo de labirinto.   
+Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo, e posteriormente é convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. Além disso, a escola possui diferentes casas que disputam o torneio tribruxo (torneio para testar a capacidade do aluno no âmbito de uso de magias na hora correta. Essa aplicação tem o intuito de relembrar os componentes presentes no filme de harry potter, além de criar uma dinâmica de competitividade para o usuário, permitindo com que ele se divirta com as temáticas do filme.     
 
 
 #### **1.1 Objetivo**<br>
-Trabalho foi desenvolvido com intuito de criar um jogo na linguagem JavaScript que contenha estruturas de dados sendo utilizadas na sua composição. Buscando com a produção adaptabilidade, aprendizado e o trabalho em equipe. 
+A implementação desse jogo foi direcionada a o uso de estrutura de dados, e como ela pode ser útil no desenvolvimento de uma aplicação. As estruturas se mostram primordiais para a facilitação e correção de algumas adversidades. Além disso, há o aprendizado de uma nova linguagem juntamente com uma biblioteca de desenvolvimento de jogos, JavaScript e Phaser 3 respectivamente. Após a junção do uso das estruturas com os recursos que a linguagem e a biblioteca fornece, foi possível a criação de uma aplicação fluida e divertida, proporcionando uma ótima experiência para o usuário.
 
 
 ### **2. Desenvolvimento**<br>
@@ -62,33 +62,3 @@ Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conse
 DEVMEDIA.Código referência para função embaralharCartas() no arquivo jogoDaMemoria.js Disponível em < https://www.devmedia.com.br/embaralhando-o-conteudo-de-vetores-em-java/26382 > Acessado em 8 de Dezembro.
 
 ALVARADO, Francisco Pereira. Disponível em < https://gammafp.com/ > Acessado em 1 de Novembro.
-
-
-<br>
-<br>
-<br>
-<br>
-# MANUAL PARA JOGAR
-
-## NO JOGO DA MEMÓRIA
-
-### > **Quantos jogadores**<br>
-2 jogadores
-
-### > **Objetivo**<br>
-Vence aquele que achar mais pares de cartas iguais.
-
-### > **Botões**<br>
-Através do clique do botão esquerdo do mouse.
-
-## NO JOGO DO LABIRINTO
-
-### > **Quantos jogadores**<br>
-2 jogadores
-
-### > **Objetivo**<br>
-Com os bonecos encontrar o objeto correto dentre os objetos espalhados pelo mapa. Ganha o player que o achar primeiro.
-
-### > **Botões**<br>
-Para movimentar o player 1: W - cima, A - esquerda, S - baixo e D - direita.<br>
-Para movimentar o player 2: I - cima, J - esquerda, K - baixo e L - direita.

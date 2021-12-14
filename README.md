@@ -14,7 +14,7 @@ WILLIAM KEVIM FONTES GARANGAU<br>
 
 
 ### **1. Introdução**<br>
-Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo e que foi convidado para estudar na Escola de Magia e Bruxaria de Hogwarts a qual possui diferentes casas que disputam o torneio tribruxo em um determinado ponto da série.  
+Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo e que foi convidado para estudar na Escola de Magia e Bruxaria de Hogwarts a qual possui diferentes casas que disputam o torneio tribruxo em um determinado ponto da série. Esta aplicação buscou trazer a diversificação da série para uma interatividade gamer.  
 
 
 #### **1.1 Objetivo**<br>

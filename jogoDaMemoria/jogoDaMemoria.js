@@ -228,7 +228,7 @@ function mudarCena(){
 
     if (pilha1.size() == 15){
         alert('Fim de jogo\nVencedor: ' + vencedor);
-        window.location.href = "https://www.devmedia.com.br/javascript-redirect-redirecionando-o-usuario-com-window-location/39809";
+        window.location.href = "http://127.0.0.1:5500/menu/index.html";
     } 
 }
 

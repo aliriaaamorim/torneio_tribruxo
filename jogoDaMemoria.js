@@ -1,4 +1,3 @@
-// Primeira fase do jogo
 import Stack from "./Stack.js";
 
 var pilha1 = new Stack()
@@ -25,7 +24,7 @@ let imagens = [
 
 ]
 
-/* randomizar elementos do array 'imagens' */
+// randomizar elementos do array 'imagens' 
 
 function embaralharCartas(lista) {  //código original(java): devmedia
 
@@ -91,13 +90,6 @@ let carta1, carta2;
 // Controle de cartas abertas por vez (2)
 let bloquar = false; 
 
-//////////////////////////////////////////////////////
-// Controle de cartas viradas para finalizacao do jogo
-let cartasViradas = 0; //
-
-/////////////////////////////////////////////
-// Controle de vez de jogada para cada player
-
 
 ///////////////////////////////////////////////////
 ///////// FUNCAO PARA VIRAR CARTA AO CLICAR ///////
@@ -124,8 +116,6 @@ function virarCarta() {
     
     //exibe mensagem de fim de jogo, caso todas as cartas tenham sido abertas
     mudarCena(); 
-    console.log(pilha1.size());
-    console.log(pilha2.size());
 
 }
 
@@ -160,10 +150,11 @@ function atribuirPontos(){
 
 }
 
+/////////////////////////////////////////////
+// Controle de vez de jogada para cada player
 function pulaVez() {
     vezJogador1 = !vezJogador1;
 }
-
 
 
 //////////////////////////////////////////////////////
@@ -173,10 +164,11 @@ function comparar(){
     pilha1.push(carta1.dataset.id);
     pilha2.push(carta2.dataset.id);
 
+    // compara o identificador das cartas no topo da pilha
+    /// a partir da atribuicao em 'divCarta':60
     let cartasIguais = pilha1.peek() ===pilha2.peek();
 
     if (cartasIguais){
-        cartasViradas++; // incrementa a variavel cartasViradas para registrar o fim do jogo
         atribuirPontos();
         limparVariavel(cartasIguais); // chama a funcao 'limparvariavel' com o parametro 'cartasIguais' = true
 
@@ -187,24 +179,6 @@ function comparar(){
         pilha2.pop();
     }
 
-    /*
-    // compara o identificador das cartas clicadas
-    /// a partir da atribuicao em 'divCarta':60
-    let cartasIguais = carta1.dataset.id === carta2.dataset.id;
-    
-    if (cartasIguais){
-        cartasViradas++; // incrementa a variavel cartasViradas para registrar o fim do jogo
-        atribuirPontos();
-        limparVariavel(cartasIguais); // chama a funcao 'limparvariavel' com o parametro 'cartasIguais' = true
-
-    } else{
-        pulaVez();
-        desabilitarCartas();
-    }
-
-    // chama a funcao 'desabilitarCartas', caso os
-    ///identificadores sejam diferentes
-    */
 }
 
 ///////////////////////////////////////////////////////////////
@@ -240,11 +214,22 @@ function limparVariavel(cartasIguais = false){
 }
 
 
+
+
+
 function mudarCena(){
-    if (cartasViradas == 15){
-        alert("Fim de jogo");
-      } 
-  }
+
+    let vencedor;
+    if (pontosJogador1 > pontosJogador2){
+        vencedor = "Jogador 1";
+    } else {
+        vencedor = "Jogador 2";
+    }
+
+    if (pilha1.size() == 15){
+        alert('Fim de jogo\nVencedor: ' + vencedor);
+    } 
+}
 
 cartas.forEach(item => item.addEventListener('click', virarCarta));
 

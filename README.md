@@ -55,12 +55,11 @@ A criação do labirinto foi através do programa windowns gratuito chamado Tile
 
 No código possui um arquivo chamado "index.html" em que o mesmo faz a execução e o chamado dos métodos e funções dos arquivos '.js'. No arquivo torneio_tribruxo foi construído a partir de configurações básicas da biblioteca Phaser. O arquivo MainScene que faz o carregamento de todo o mapa da aplicação, dos personagens e todos os outros recursos usados no jogo. O resource que fará o papel de capturar os objetos coletáveis. A pasta `players` contendo a casa correspondente da escola de magia. O código fonte do jogo se encontra na pasta level2.
 
-Para jogar pode ser utilizado as teclas W, A, S e D para o primeiro player e para o segundo I, J, K e L. Na qual as teclas W e I fazem o movimento para cima, já S e K movimentam o boneco para baixo, juntamente com os botões A e J que fazem o deslocamento para esquerda e os dois últimos que são o D e o L para a direita.
 
 ### **Manual para jogar**<br>
 Link para funcionamneto do jogo: https://www.youtube.com/watch?v=plqWoYLUt8E
 
-#### NO JOGO DA MEMÓRIA
+#### - NO JOGO DA MEMÓRIA
 
 ##### > **Quantos jogadores**<br>
 2 jogadores
@@ -71,7 +70,7 @@ Vence aquele que achar mais pares de cartas iguais.
 ##### > **Botões**<br>
 Através do clique do botão esquerdo do mouse.
 
-#### NO JOGO DO LABIRINTO
+#### - NO JOGO DO LABIRINTO
 
 ##### > **Quantos jogadores**<br>
 2 jogadores

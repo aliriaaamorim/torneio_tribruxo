@@ -57,7 +57,7 @@ No código possui um arquivo chamado "index.html" em que o mesmo faz a execuçã
 
 
 ### **Manual para jogar**<br>
-Link para funcionamneto do jogo: https://www.youtube.com/watch?v=plqWoYLUt8E
+Link para funcionamento do jogo: https://www.youtube.com/watch?v=plqWoYLUt8E
 
 #### - NO JOGO DA MEMÓRIA
 

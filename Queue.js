@@ -1,67 +1,58 @@
-class Queue {
-    
-    // Cria uma fila
-
-    constructor(elemento) {
-        this._size = 0;
-        
-        if (elemento === undefined){
-            this._primeiro = null;
-            this._ultimo = null;
-        }
-        else {
-            this.enqueue(elemento);
-        }
-    }
-
-    // Checa se a fila está vazia.
-    
-    empty () {
-        return this._size === 0;
-    }
-
-    // Checa o tamanho da fila.
-
-    size () {
-        return this._size;
-    }
-
-    // Coloca um elemento no final da fila.
-
-    enqueue (elemento) {
-        let newNode = new QueueNode(elemento);
-        if (this.empty){
-            this._primeiro =  newNode;
-        }
-        else {
-            this._ultimo.next = newNode;
-        }
-        this.ultimo = newNode;
-        this._size++;
-    }
-
-    // Remove o elemento que está na frente da fila.
-
-    dequeue () {
-        if (this.size === 0)
-            throw new Error ('A Queue ja está vazia');
-        let objetoRemovido = this._primeiro;
-        this._primeiro = objetoRemovido.next;
-        this._size--;
-        return objetoRemovido.elemento;
-    }
-
-    // Retorna o valor de quem está em primeiro na fila.
-
-    peek () {
-        return this._primeiro.elemento;
-    }
-
-    // Retorna o primeiro e o ultimo da fila.
-
-    headTail(){
-        return [this.dequeue(), this];
-    }
+export default class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
 }
 
-exports.Queue = Queue;
+// Cria uma fila
+
+export default class Queue {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.tamanho = 0;
+  }
+
+  // Coloca uma pessoa na fila
+
+  enqueue(value) {
+    const node = new Node(value);
+
+    if (this.head) {
+      this.tail.next = node;
+      this.tail = node;
+    } else {
+      this.head = node;
+      this.tail = node;
+    }
+
+    this.tamanho++;
+  }
+
+  // Tira uma pessoa da fila
+
+  dequeue() {
+    const atual = this.head;
+    this.head = this.head.next;
+    this.tamanho--;
+
+    return atual.value;
+  }
+
+  peek() {
+    return this.head.value;
+  }
+
+  // Checa se esta vazio
+
+  isEmpty() {
+    return this.tamanho === 0;
+  }
+
+  // Retorna o tamanho
+
+  size() {
+    return this.tamanho;
+  }
+}

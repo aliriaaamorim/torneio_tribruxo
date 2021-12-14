@@ -14,7 +14,7 @@ WILLIAM KEVIM FONTES GARANGAU<br>
 
 
 ### **1. Introdução**<br>
-Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo, e posteriormente é convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. Além disso, a escola possui diferentes casas que disputam o torneio tribruxo (torneio para testar a capacidade do aluno no âmbito de uso de magias na hora correta. Essa aplicação tem o intuito de relembrar os componentes presentes no filme de harry potter, além de criar uma dinâmica de competitividade para o usuário, permitindo com que ele se divirta com as temáticas do filme.     
+Foi criado um jogo baseado na série de fantasia Harry Potter escrita pela autora britânica J. K. Rowling a qual narra as aventuras de um jovem chamado Harry James Potter, que se descobre um bruxo, e posteriormente é convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. Além disso, a escola possui diferentes casas que disputam o torneio tribruxo (torneio para testar a capacidade do aluno no âmbito de uso de magias na hora correta. Essa aplicação tem o intuito de relembrar os componentes presentes no filme de harry potter, além de criar uma dinâmica de competitividade para o usuário, permitindo com que ele se divirta com as temáticas do filme.   
 
 
 #### **1.1 Objetivo**<br>
@@ -24,11 +24,11 @@ A implementação desse jogo foi direcionada a o uso de estrutura de dados, e co
 ### **2. Desenvolvimento**<br>
 
 #### **2.1 Visão Geral do Projeto**<br>
-O projeto foi feito através do github na linguagem JavaScript e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. A aplicação possui dois jogos atualmente o primeiro que é jogo da memória e o segundo o jogo de labirinto. Sendo um modelo web service no qual será possível a participação de 2 players. Contendo uma tela de início, após uma segunda tela para selecionar os jogos. Aplicação busca ser rápida, intuitiva e interativa, não precisando do armazenamento de dados pessoais nem de um banco de dados. 
+O projeto foi feito desenvolvido com o uso do github, foi escrito na linguagem JavaScript e faz uso da biblioteca Phaser 3 e outras que serão demonstradas ao longo da documentação. A Aplicação é composta por dois jogos, sendo eles: Jogo da Memória e Jogo do labirinto. Além disso, ela possui um modelo web service no qual será possível a participação de 2 players. Contendo o menu que permitirá com que o usuário seja redirecionado às fases de escolha. A aplicação possui a vantagem de ser rápida, intuitiva e interativa. Ademais, ela não faz uso do armazenamento de dados pessoais e banco de dados. 
 
 
 #### **2.2 Planejamento geral**<br>
-A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio, tela de selecionar jogo, do jogo da Memória, do jogo de Labirinto e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.<br>
+Para uma melhor dinâmica entre os membros da equipe, foi primordial a divisão de tarefas, que permitiu a execução de um trabalho mais eficiente. As tarefas ficaram divididas da seguinte forma: implementação do menu, jogo da memória, desafio do Labirinto e documentação. Ademais, haviam reuniões recorrentes e constante interação entre os membros da equipe para acrescentar na eficiência do jogo ao máximo.<br>
 
 
 **Tela de início e escolha dos personagens**<br>
@@ -62,3 +62,33 @@ Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conse
 DEVMEDIA.Código referência para função embaralharCartas() no arquivo jogoDaMemoria.js Disponível em < https://www.devmedia.com.br/embaralhando-o-conteudo-de-vetores-em-java/26382 > Acessado em 8 de Dezembro.
 
 ALVARADO, Francisco Pereira. Disponível em < https://gammafp.com/ > Acessado em 1 de Novembro.
+
+
+<br>
+<br>
+<br>
+<br>
+# MANUAL PARA JOGAR
+
+## NO JOGO DA MEMÓRIA
+
+### > **Quantos jogadores**<br>
+2 jogadores
+
+### > **Objetivo**<br>
+Vence aquele que achar mais pares de cartas iguais.
+
+### > **Botões**<br>
+Através do clique do botão esquerdo do mouse.
+
+## NO JOGO DO LABIRINTO
+
+### > **Quantos jogadores**<br>
+2 jogadores
+
+### > **Objetivo**<br>
+Com os bonecos encontrar o objeto correto dentre os objetos espalhados pelo mapa. Ganha o player que o achar primeiro.
+
+### > **Botões**<br>
+Para movimentar o player 1: W - cima, A - esquerda, S - baixo e D - direita.<br>
+Para movimentar o player 2: I - cima, J - esquerda, K - baixo e L - direita.

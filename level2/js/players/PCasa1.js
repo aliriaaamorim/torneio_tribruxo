@@ -1,4 +1,3 @@
-import Stack from "./stack.js";
 export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     constructor(data,numAleat,nome){
         let {scene,x,y,texture,frame} = data;

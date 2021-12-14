@@ -37,6 +37,9 @@ Este seria o primeiro level. Consistindo em um jogo de 30 peças ou cartas que t
 **Jogo do Labirinto**<br>
 Para o segundo level tem-se o jogo do Labirinto que consiste na disputa entre jogadodores vencedores do level 1. O qual os players terão que procurar pelo objeto vencedor dentre os objetos distribuidos no labirinto. Consquistando a vitória o player que achar o objeto correto primeiro. 
 
+A criação do labirinto foi através do programa windowns gratuito chamado Tiled que auxilia na criação do mapa. Utilizou-se frames de personagens prontos retirado do site a seguir https://itch.io/game-assets/tag-sprites com algumas adaptações. E a movimentação do boneco foi feita através do site seguinte https://1drv.ms/u/s!Arkb2zGKHWJXiN1micaifszQJZbDTw?e=HXYmQd. Válido salientar o uso da biblioteca Phaser 
+
+https://gammafp.com/ para criar o código da movimentação do boneco
 
 **Jogo da cobrinha**<br>
 

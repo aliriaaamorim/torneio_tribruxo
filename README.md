@@ -27,7 +27,7 @@ ED - Estrutura de Dados;
 
 
 ### **2. Visão Geral do Projeto**<br>
-O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto. Na aplicação web será possível a participação de 4 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
+O projeto foi feito através do github e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. O jogo é subdividido em dois levels sendo o primeiro baseado no jogo da memória e o segundo em um jogo de labirinto e um jogo bônus que seria o jogo da cobrinha. Na aplicação web será possível a participação de 4 players sendo cada um indicado por uma casa da escola de magia como: Grifinória na cor vermelho, Lufa-Lufa na cor azul, Corvinal em amarelo e Sonserina com verde.<br>
 
 **Tela de inicio**<br>
 
@@ -51,3 +51,6 @@ A princípio foi pensado e dividido entre os membros da equipe a implementação
 Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conseguiu-se elaborar jogos em Javascript. Com os mesmos utilizando de estruturas de dados como priority queue, stack, dentre outras que compuseram os códigos para que o torneio funcionasse como um todo, além de trazer a série para o mundo gamer de uma forma saudosa e interativa. 
 
 ### **Referências**<br>
+
+
+# MANUAL PARA JOGAR

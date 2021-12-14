@@ -82,6 +82,7 @@ class Scene2 extends Phaser.Scene {
               return this.tamanho;
             }
         }
+        //Estrutura Queue implementada diretamente implementada no create(), pois estava ocorrendo erros na importação.
 
         let q = new Queue();
 

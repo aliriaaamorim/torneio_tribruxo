@@ -26,6 +26,9 @@ A implementação desse jogo foi direcionada a o uso de estrutura de dados, e co
 #### **2.1 Visão Geral do Projeto**<br>
 O projeto foi feito através do github na linguagem JavaScript e utilizando outras bibliotecas que vão ser demonstradas no decorrer da documentação. A aplicação possui dois jogos atualmente o primeiro que é jogo da memória e o segundo o jogo de labirinto. Sendo um modelo web service no qual será possível a participação de 2 players. Contendo uma tela de início, após uma segunda tela para selecionar os jogos. Aplicação busca ser rápida, intuitiva e interativa, não precisando do armazenamento de dados pessoais nem de um banco de dados. 
 
+**Vídeo explicando o desenvolvimento e codificação das estruturas**<br>
+https://www.youtube.com/watch?v=cEk19YWrpHU (Qualidade até 480)<br>
+https://www.youtube.com/watch?v=UbP3oa7XFuE (Qualidade até 720)
 
 #### **2.2 Planejamento geral**<br>
 A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio, tela de selecionar jogo, do jogo da Memória, do jogo de Labirinto e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.<br>

@@ -30,8 +30,8 @@ O projeto foi feito através do github na linguagem JavaScript e utilizando outr
 #### **2.2 Planejamento geral**<br>
 A princípio foi pensado e dividido entre os membros da equipe a implementação da tela de Inicio, tela de selecionar jogo, do jogo da Memória, do jogo de Labirinto e documentação. Com reuniões em boa parte semanais e com interação pelas mídias sociais a medida que um grande avanço ocorria.<br>
 
-
-**Tela de início e escolha dos personagens**<br>
+#### **2.3 Progresso do projeto**<br>
+**Tela de início e escolha do jogo**<br>
 A tela do menu é composta por uma foto com a temática do torneio aliado ao nome do mesmo. Além disso, há o botão de play na primeira cena, que permite a transição para a tela de seleção de jogo. Essa tela é composta por 2 imagens animadas, cada um representando um jogo, onde cada player poderá escolher entre o jogo da memória e o jogo de labirinto. Após a seleção, os jogadores são redirecionados para a aplicação e podem interagir. Logo após a finalização retorna para tela com o play. 
 
 

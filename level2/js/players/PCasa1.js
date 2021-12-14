@@ -34,7 +34,6 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     static preload(scene){
         scene.load.atlas('casa1','assets/images/casa1/casa1.png','assets/images/casa1/casa1_atlas.json')
         scene.load.animation('casa1_anim','assets/images/casa1/casa1_anim.json');
-        let pilha = new Stack()
     }
 
     get velocity() {

@@ -8,28 +8,13 @@ class Scene2 extends Phaser.Scene {
         
         this.load.image("background", "assets/images/background.jpeg");
 
-        this.load.spritesheet("hp_char", "assets/images/chars/casa1/front_01.png", {
-            frameHeight: 32,
-            frameWidth: 32
-        });
-
-        this.load.spritesheet("her_char", "assets/images/chars/casa2/front_01.png", {
-            frameHeight: 32,
-            frameWidth: 32
-        });
-
-        this.load.spritesheet("mal_char", "assets/images/chars/casa3/front_01.png", {
-            frameHeight: 32,
-            frameWidth: 32
-        });
-
-        this.load.spritesheet("ron_char", "assets/images/chars/casa4/front_01.png", {
-            frameHeight: 32,
-            frameWidth: 32
-        });
+        this.load.image("fase1", "assets/images/fase1.png");
+        
+        this.load.image("fase2", "assets/images/fase2.png");
 
     } 
     create() {
+
         this.add.image(400, 300, "background");
 
         this.add.image(400, 70, "tri_name");
@@ -38,115 +23,125 @@ class Scene2 extends Phaser.Scene {
 
         //let player1 = ?, let player2 = ?, let player3 = ?, let player4 = ?,
 
-        let playerNum = 1;
-        //let char = 0;
-        let charSelection = this.add.text(270, 200, `Select Player ${playerNum}`, style);
+        class Node {
+            constructor(value) {
+              this.value = value;
+              this.next = null;
+            }
+        }
+          
+          // Cria uma fila
+          
+          class Queue {
+            constructor() {
+              this.head = null;
+              this.tail = null;
+              this.tamanho = 0;
+        }
+          
+            // Coloca uma pessoa na fila
+          
+            enqueue(value) {
+              const node = new Node(value);
+          
+              if (this.head) {
+                this.tail.next = node;
+                this.tail = node;
+              } else {
+                this.head = node;
+                this.tail = node;
+              }
+          
+              this.tamanho++;
+            }
+          
+            // Tira uma pessoa da fila
+          
+            dequeue() {
+              const atual = this.head;
+              this.head = this.head.next;
+              this.tamanho--;
+          
+              return atual.value;
+            }
+          
+            // Checa se esta vazio
+          
+            empty() {
+              return this.tamanho === 0;
+            }
+        
+            peek()
+            {
+                return this.head.value;
+            }
+          
+            // Retorna o tamanho
+          
+            size() {
+              return this.tamanho;
+            }
+        }
 
-        let confirmButton = this.add.text(335, 420, "Next", style);
+        let q = new Queue();
+
+        let confirmButton = this.add.text(335, 420, "Start", style);
         confirmButton.setVisible(false)
         .setInteractive()
         .on("pointerover", () => {
             confirmButton.setScale(1.2);
+            confirmButton.setStyle({fill:'#0f0'});
         })
         .on("pointerout", () => {
             confirmButton.setScale(1);
+            confirmButton.setStyle({fill:'#ffffff'});
         })
         .on("pointerdown", () => {
-            if (playerNum == 2)
+            if (q.peek() === 1)
             {
-                //this.scene.start("fase1");
-            } else {
-                playerNum++;
-                charSelection.setText(`Select Player ${playerNum}`);
+                window.location.href = "../jogoDaMemoria/level1.html";
             }
-            //m[playerNum] = char
-        });
-
-        //char selection
-        let hpSprite = this.add.sprite(250, 350, "hp_char")
-        .setInteractive()
-        .setScale(2)
-        .on("pointerover", () => {
-            hpSprite.setScale(2.5);        
-        })
-        .on("pointerout", () => {
-            hpSprite.setScale(2);
-        })
-        .on("pointerdown", () => {
-            confirmButton.setStyle({fill:'#f84e4e'});
-            confirmButton.setVisible(true);
-            hpSprite.setScale(2.5);
-            if (playerNum == 2)
+            else if (q.peek() === 2)
             {
-                confirmButton.setText("Start");
-            } 
-            //char = 1;
-            //seta o personagem como harry potter
-        });
-
-        let herSprite = this.add.sprite(350, 350, "her_char")
-        .setInteractive()
-        .setScale(2)
-        .on("pointerover", () => {
-            herSprite.setScale(2.5);        
-        })
-        .on("pointerout", () => {
-            herSprite.setScale(2);
-        })
-        .on("pointerdown", () => {
-            confirmButton.setStyle({fill:'#ffff00'});
-            confirmButton.setVisible(true);
-            herSprite.setScale(2.5);
-            //seta o personagem como hermione
-            if (playerNum == 2)
-            {
-                //char = 2;
-                confirmButton.setText("Start");
-            } 
-        });
-
-        let malSprite = this.add.sprite(450, 350, "mal_char")
-        .setInteractive()
-        .setScale(2)
-        .on("pointerover", () => {
-            malSprite.setScale(2.5);       
-        })
-        .on("pointerout", () => {
-            malSprite.setScale(2);
-        })
-        .on("pointerdown", () => {
-            confirmButton.setStyle({fill:'#0f0'});
-            confirmButton.setVisible(true);
-            malSprite.setScale(2.5);
-            //seta o personagem como malfoy
-            if (playerNum == 2)
-            {
-                confirmButton.setText("Start");
+                window.location.href = "../level2/index.html";
             }
-            //char = 3;
         });
 
-        let ronSprite = this.add.sprite(550, 350, "ron_char")
+        let fase1Button = this.add.image(270, 300, "fase1")
         .setInteractive()
-        .setScale(2)
+        fase1Button.setScale(0.3)
         .on("pointerover", () => {
-            ronSprite.setScale(2.5);       
+            fase1Button.setScale(0.4);
         })
         .on("pointerout", () => {
-            ronSprite.setScale(2);
+            fase1Button.setScale(0.3);
         })
         .on("pointerdown", () => {
-            confirmButton.setStyle({fill:'#4388f6'});
             confirmButton.setVisible(true);
-            ronSprite.setScale(2.5);
-            //seta o personagem como rony
-            if (playerNum == 2)
+            if(!q.empty())
             {
-                confirmButton.setText("Start");
+                q.dequeue();
             }
-            //char = 4; 
+            q.enqueue(1);
         });
-        //char selection
+
+        let fase2Button = this.add.image(510, 300, "fase2")
+        .setInteractive()
+        fase2Button.setScale(0.28)
+        .on("pointerover", () => {
+            fase2Button.setScale(0.35);
+        })
+        .on("pointerout", () => {
+            fase2Button.setScale(0.28);
+        })
+        .on("pointerdown", () => {
+            confirmButton.setVisible(true);
+            if(!q.empty())
+            {
+                q.dequeue();
+            }
+            q.enqueue(2);
+        });
     }
     update() {}
 }

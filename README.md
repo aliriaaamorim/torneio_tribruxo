@@ -36,11 +36,8 @@ A tela do menu é composta por uma foto com a temática do torneio aliado ao nom
 
 
 **Estrutura de dados**<br>
-queue
-- Queue (Menu para seleção de fase)
--  É primordial entender o funcionamento da fila antes de explicar o funcionamento dela dentro do jogo. A fila é uma estrutura FIFO(primeiro a entrar, primeiro a sair), além disso ela é uma estrutura que nos permite acessar o primeiro termo dela (o termo que está na frente), e fazer as operações push e pop em tempo constante. Essa estrutura foi usada para o menu de seleção de fase do jogo, pois permitia criar dinamicidade na escolha do player em relação a o que pretende jogar, ou seja, é possível trocar de jogo mesmo quando ele já havia clicado em outro. Assim que o usuário clica em algum jogo, há a verificação se ele clicou em algum outro jogo antes, caso tenha clicado retiraremos esse jogo da fila e colocaremos o novo jogo que o mesmo pretende jogar, assim, quando ele decidir realmente o que quer jogar, há a verificação do jogo que está na frente da fila e posteriormente é iniciado.
 
-fila
+Fila
 - Fila (Armazenamento do jogo que será iniciado)
 -  É primordial entender o funcionamento da fila antes de explicar o funcionamento dela dentro do jogo. A fila é uma estrutura FIFO(primeiro a entrar, primeiro a sair), além disso ela é uma estrutura que nos permite acessar o primeiro termo dela (o termo que está na frente), e fazer as operações push e pop em tempo constante. Essa estrutura foi usada para o menu de seleção de fase do jogo, pois permitia criar dinamicidade na escolha do player em relação a o que pretende jogar, ou seja, é possível trocar de jogo mesmo quando ele já havia clicado em outro. Assim que o usuário clica em algum jogo, há a verificação se ele clicou em algum outro jogo antes, caso tenha clicado retiraremos esse jogo da fila e colocaremos o novo jogo que o mesmo pretende jogar, assim, quando ele decidir realmente o que quer jogar, há a verificação do jogo que está na frente da fila e posteriormente é iniciado.
 

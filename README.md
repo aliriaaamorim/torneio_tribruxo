@@ -62,3 +62,24 @@ Conclui-se que o objetivo deste trabalho foi alcançado tendo em vista que conse
 
 
 # MANUAL PARA JOGAR
+
+## NO JOGO DA MEMÓRIA
+**Quantos jogadores**
+2 jogadores
+
+**Objetivo**
+Vence aquele que achar mais pares de cartas iguais.
+
+**Botões**
+Através do clique do botão esquerdo do mouse.
+
+## NO JOGO DO LABIRINTO
+**Quantos jogadores**
+2 jogadores
+
+**Objetivo**
+Com os bonecos encontrar o objeto correto dentre os objetos espalhados pelo mapa. Ganha o player que o achar primeiro.
+
+**Botões**
+Para movimentar o player 1: W - cima, A - esquerda, S - baixo e D - direita.
+Para movimentar o player 2: I - cima, J - esquerda, K - baixo e L - direita.

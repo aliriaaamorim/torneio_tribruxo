@@ -17,9 +17,11 @@ class Scene1 extends Phaser.Scene {
         this.load.audio("theme_song", "assets/audios/theme_song.mp3");
     } 
     create() {
+
         this.add.image(400, 300, "background");
 
         this.add.image(400, 70, "tri_name");
+
 
         let hpSprite = this.add.sprite(100, 100, "hp_char");
         hpSprite.setVisible(false);

@@ -1,3 +1,4 @@
+import Stack from "./stack.js";
 export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     constructor(data,numAleat,nome){
         let {scene,x,y,texture,frame} = data;
@@ -20,7 +21,7 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
         // Colisor redondo
         const posY = this.y;
         const {Body,Bodies} = Phaser.Physics.Matter.Matter;
-        var playerCollider = Bodies.circle(this.x,this.y+10,15,{isSensor:false,label:'playerCollider'});
+        var playerCollider = Bodies.circle(this.x,this.y,15,{isSensor:false,label:'playerCollider'});
         var playerSensor = Bodies.circle(this.x,this.y,30,{isSensor:true, label:'playerSensor'});
         const compoundBody = Body.create({
             parts:[playerCollider,playerSensor],
@@ -34,6 +35,7 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     static preload(scene){
         scene.load.atlas('casa1','assets/images/casa1/casa1.png','assets/images/casa1/casa1_atlas.json')
         scene.load.animation('casa1_anim','assets/images/casa1/casa1_anim.json');
+        let pilha = new Stack()
     }
 
     get velocity() {
@@ -68,11 +70,14 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     }
 
     CreatePickupCollisions(playerCollider){
+        console.log(playerCollider)
         this.scene.matterCollision.addOnCollideStart({
             objectA:[playerCollider],
             callback: other => {
+                console.log(other)
                 if(other.gameObjectB.name == 'crawn') {
                     other.gameObjectB.destroy();
+                    // other.gameObjectB.scale=1.5;
                     if (this.numeroAleatorio == 1){
                         this.winner = null;
                         if (this.nome == 'player1'){
@@ -85,6 +90,7 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.scene.game.destroy();
                     }
                 }
+                else {other.gameObjectB.scale=1;}
                 if(other.gameObjectB.name == 'light') {
                     other.gameObjectB.destroy();
                     if (this.numeroAleatorio == 2){
@@ -113,9 +119,37 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.scene.game.destroy();
                     }
                 }
-                if(other.gameObjectB.name == 'candle') {
+                if(other.gameObjectB.name == 'ghost') {
                     other.gameObjectB.destroy();
                     if (this.numeroAleatorio == 4){
+                        this.winner = null;
+                        if (this.nome == 'player1'){
+                            this.winner = this.scene.add.image(400,300,'winner1');
+                        }
+                        else if (this.nome == 'player2'){
+                            this.winner = this.scene.add.image(400,300,'winner2');
+                        }
+                        this.winner.depth = 100;
+                        this.scene.game.destroy();
+                    }
+                }
+                if(other.gameObjectB.name == 'hat') {
+                    other.gameObjectB.destroy();
+                    if (this.numeroAleatorio == 5){
+                        this.winner = null;
+                        if (this.nome == 'player1'){
+                            this.winner = this.scene.add.image(400,300,'winner1');
+                        }
+                        else if (this.nome == 'player2'){
+                            this.winner = this.scene.add.image(400,300,'winner2');
+                        }
+                        this.winner.depth = 100;
+                        this.scene.game.destroy();
+                    }
+                }
+                if(other.gameObjectB.name == 'candle') {
+                    other.gameObjectB.destroy();
+                    if (this.numeroAleatorio == 6){
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');

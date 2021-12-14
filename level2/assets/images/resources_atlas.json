@@ -1,19 +1,6 @@
 {
     "frames": [
         {
-            "filename": "light",
-            "frame": {
-                "w": 32,
-                "h": 64,
-                "x": 34,
-                "y": 1
-            },
-            "anchor": {
-                "x": 0.5,
-                "y": 0.5
-            }
-        },
-        {
             "filename": "candle",
             "frame": {
                 "w": 32,
@@ -27,11 +14,37 @@
             }
         },
         {
+            "filename": "hat",
+            "frame": {
+                "w": 32,
+                "h": 64,
+                "x": 34,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "light",
+            "frame": {
+                "w": 32,
+                "h": 64,
+                "x": 1,
+                "y": 66
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
             "filename": "crawn",
             "frame": {
                 "w": 32,
                 "h": 32,
-                "x": 1,
+                "x": 34,
                 "y": 66
             },
             "anchor": {
@@ -44,8 +57,21 @@
             "frame": {
                 "w": 32,
                 "h": 32,
-                "x": 34,
-                "y": 66
+                "x": 67,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "ghost",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 67,
+                "y": 34
             },
             "anchor": {
                 "x": 0.5,

@@ -20,7 +20,7 @@ export default class PCasa4 extends Phaser.Physics.Matter.Sprite {
         // Colisor redondo
         const posY = this.y;
         const {Body,Bodies} = Phaser.Physics.Matter.Matter;
-        var playerCollider = Bodies.circle(this.x,this.y+10,15,{isSensor:false,label:'playerCollider'});
+        var playerCollider = Bodies.circle(this.x,this.y,15,{isSensor:false,label:'playerCollider'});
         var playerSensor = Bodies.circle(this.x,this.y,30,{isSensor:true, label:'playerSensor'});
         const compoundBody = Body.create({
             parts:[playerCollider,playerSensor],
@@ -68,9 +68,11 @@ export default class PCasa4 extends Phaser.Physics.Matter.Sprite {
     }
 
     CreatePickupCollisions(playerCollider){
+        console.log(playerCollider)
         this.scene.matterCollision.addOnCollideStart({
             objectA:[playerCollider],
             callback: other => {
+                console.log(other)
                 if(other.gameObjectB.name == 'crawn') {
                     other.gameObjectB.destroy();
                     if (this.numeroAleatorio == 1){
@@ -113,9 +115,37 @@ export default class PCasa4 extends Phaser.Physics.Matter.Sprite {
                         this.scene.game.destroy();
                     }
                 }
-                if(other.gameObjectB.name == 'candle') {
+                if(other.gameObjectB.name == 'ghost') {
                     other.gameObjectB.destroy();
                     if (this.numeroAleatorio == 4){
+                        this.winner = null;
+                        if (this.nome == 'player1'){
+                            this.winner = this.scene.add.image(400,300,'winner1');
+                        }
+                        else if (this.nome == 'player2'){
+                            this.winner = this.scene.add.image(400,300,'winner2');
+                        }
+                        this.winner.depth = 100;
+                        this.scene.game.destroy();
+                    }
+                }
+                if(other.gameObjectB.name == 'hat') {
+                    other.gameObjectB.destroy();
+                    if (this.numeroAleatorio == 5){
+                        this.winner = null;
+                        if (this.nome == 'player1'){
+                            this.winner = this.scene.add.image(400,300,'winner1');
+                        }
+                        else if (this.nome == 'player2'){
+                            this.winner = this.scene.add.image(400,300,'winner2');
+                        }
+                        this.winner.depth = 100;
+                        this.scene.game.destroy();
+                    }
+                }
+                if(other.gameObjectB.name == 'candle') {
+                    other.gameObjectB.destroy();
+                    if (this.numeroAleatorio == 6){
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');

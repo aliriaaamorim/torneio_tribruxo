@@ -28,7 +28,7 @@ export default class MainScene extends Phaser.Scene {
 
     create(){
         let min = 1;
-        let max = 5;
+        let max = 7;
         let numeroAleatorio = Math.floor(Math.random() * (max - min)) + min;
         let nome1 = 'player1'
         let nome2 = 'player2'
@@ -63,11 +63,5 @@ export default class MainScene extends Phaser.Scene {
     update(){
         this.player1.update()
         this.player2.update()
-    }
-
-    getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
     }
 }

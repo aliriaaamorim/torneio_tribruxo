@@ -25,12 +25,7 @@ class Scene1 extends Phaser.Scene {
 
         let hpSprite = this.add.sprite(100, 100, "hp_char");
         hpSprite.setVisible(false);
-        /*'#0f0' - green    
-        '#ffffff' - black
-        '#ffff00' - yellow
-        '#ffffff' - white
-        '#ff00ff' - purple
-        */
+
         let style = {font: "40px Arial", fill: '#ffffff', align: "center"};
 
         //Play Button

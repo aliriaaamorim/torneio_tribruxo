@@ -70,39 +70,39 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     }
 
     CreatePickupCollisions(playerCollider){
-        console.log(playerCollider)
         this.scene.matterCollision.addOnCollideStart({
             objectA:[playerCollider],
             callback: other => {
-                console.log(other)
                 if(other.gameObjectB.name == 'crawn') {
                     other.gameObjectB.destroy();
-                    // other.gameObjectB.scale=1.5;
                     if (this.numeroAleatorio == 1){
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
-                else {other.gameObjectB.scale=1;}
                 if(other.gameObjectB.name == 'light') {
                     other.gameObjectB.destroy();
                     if (this.numeroAleatorio == 2){
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
                 if(other.gameObjectB.name == 'cristal') {
@@ -111,12 +111,14 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
                 if(other.gameObjectB.name == 'ghost') {
@@ -125,12 +127,14 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
                 if(other.gameObjectB.name == 'hat') {
@@ -139,12 +143,14 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
                 if(other.gameObjectB.name == 'candle') {
@@ -153,14 +159,17 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         this.winner = null;
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
+                            this.winner.depth = 100;
+                            this.fimDeJogo()
                         }
-                        this.winner.depth = 100;
-                        this.scene.game.destroy();
                     }
                 }
+                
             },
             context: this.scene,
           });
@@ -172,5 +181,10 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
             },
             context: this.scene,
           })
+    }
+
+    fimDeJogo(){
+        alert("Fim de jogo! Voltar para o menu.")
+        setTimeout(function(){window.location.href = '../index.html' }, 3000);
     }
 }

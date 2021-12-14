@@ -34,7 +34,6 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
     static preload(scene){
         scene.load.atlas('casa1','assets/images/casa1/casa1.png','assets/images/casa1/casa1_atlas.json')
         scene.load.animation('casa1_anim','assets/images/casa1/casa1_anim.json');
-        let pilha = new Stack()
     }
 
     get velocity() {
@@ -79,12 +78,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -95,12 +94,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -111,12 +110,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -127,12 +126,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -143,12 +142,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -159,12 +158,12 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
                         if (this.nome == 'player1'){
                             this.winner = this.scene.add.image(400,300,'winner1');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                         else if (this.nome == 'player2'){
                             this.winner = this.scene.add.image(400,300,'winner2');
                             this.winner.depth = 100;
-                            this.fimDeJogo()
+                            fimDeJogo()
                         }
                     }
                 }
@@ -181,9 +180,9 @@ export default class PCasa1 extends Phaser.Physics.Matter.Sprite {
             context: this.scene,
           })
     }
+}
 
-    fimDeJogo(){
-        alert("Fim de jogo! Voltar para o menu.")
-        setTimeout(function(){window.location.href = '../index.html' }, 3000);
-    }
+function fimDeJogo(){
+    alert("Fim de jogo! Voltando para o menu.")
+    setTimeout(function(){window.location.href = '../menu/index.html' }, 3000);
 }

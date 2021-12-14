@@ -1,4 +1,4 @@
-export default class Node {
+class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
@@ -7,7 +7,7 @@ export default class Node {
 
 // Cria uma fila
 
-export default class Queue {
+class Queue {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -39,6 +39,8 @@ export default class Queue {
 
     return atual.value;
   }
+
+  // Checa o elemento da frente da fila
 
   peek() {
     return this.head.value;

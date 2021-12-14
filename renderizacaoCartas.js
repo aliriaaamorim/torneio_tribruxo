@@ -1,4 +1,8 @@
 // Primeira fase do jogo
+import Stack from "./Stack.js";
+
+var pilha1 = new Stack()
+var pilha2 = new Stack()
 
 const placar = document.querySelector("#placar");
 const matriz = document.querySelector("#matriz_jogo");
@@ -120,6 +124,8 @@ function virarCarta() {
     
     //exibe mensagem de fim de jogo, caso todas as cartas tenham sido abertas
     mudarCena(); 
+    console.log(pilha1.size());
+    console.log(pilha2.size());
 
 }
 
@@ -164,6 +170,24 @@ function pulaVez() {
 ///////// FUNCAO PARA COMPARAR CARTAS CLICADAS ///////
 function comparar(){
 
+    pilha1.push(carta1.dataset.id);
+    pilha2.push(carta2.dataset.id);
+
+    let cartasIguais = pilha1.peek() ===pilha2.peek();
+
+    if (cartasIguais){
+        cartasViradas++; // incrementa a variavel cartasViradas para registrar o fim do jogo
+        atribuirPontos();
+        limparVariavel(cartasIguais); // chama a funcao 'limparvariavel' com o parametro 'cartasIguais' = true
+
+    } else{
+        pulaVez();
+        desabilitarCartas();
+        pilha1.pop();
+        pilha2.pop();
+    }
+
+    /*
     // compara o identificador das cartas clicadas
     /// a partir da atribuicao em 'divCarta':60
     let cartasIguais = carta1.dataset.id === carta2.dataset.id;
@@ -180,6 +204,7 @@ function comparar(){
 
     // chama a funcao 'desabilitarCartas', caso os
     ///identificadores sejam diferentes
+    */
 }
 
 ///////////////////////////////////////////////////////////////

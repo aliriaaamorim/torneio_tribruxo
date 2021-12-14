@@ -1,4 +1,4 @@
-class Stack {
+export default class Stack {
   //  Cria uma stack
 
   constructor(elementos) {
@@ -47,5 +47,3 @@ class Stack {
   }
 
 }
-
-exports.Stack = Stack;
